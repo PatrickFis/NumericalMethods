@@ -1,0 +1,1 @@
+epsi = 1.0while(single(1.0 + epsi) > 1.0)  epsi = epsi/2.0  endwhile epsi = 2.0*epsi printf("Epsilon = %f\n", epsi)

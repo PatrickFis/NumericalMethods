@@ -1,0 +1,1 @@
+function GaussTest()  m = 10  i = 0  j = 0  n = 0  a = 0  b = 0  for n=4:10    for i=1:n      for j=1:n        a(i, j) = (i + 1)^(j - 1);        endfor      b(i, 1) = [((i+1)^n - 1)/i];      endfor    Gauss(a, b)    endfor  endfunction

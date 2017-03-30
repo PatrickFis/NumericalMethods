@@ -1,0 +1,1 @@
+function GaussPivotTest  A = [3 2 -1; 5 3 2; -1 1 -3;]  B = [7 4 -1]  GaussPivot(A, B)  A = [1 3 2 1; 4 2 1 2; 2 1 2 3; 1 2 4 1;]  B = [-2 2 1 -1]  GaussPivot(A, B)  A = [2 4 -2 -2; 1 2 4 -3; -3 -3 8 -2; -1 1 6 -3;]  B = [-4 5 7 7]  GaussPivot(A, B)  endfunction

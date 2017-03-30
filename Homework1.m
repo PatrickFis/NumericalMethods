@@ -1,0 +1,1 @@
+i = 0imin = 0n = 30error = 0.0y = 0.0x = 0.5h = 1.0emin = 1.0for i=1:n  h = 0.25*h  y = (sin(x + h) - sin(x))/h  error = abs(cos(x) - y)  printf("i = %d, h = %f, y = %f, error = %f\n", i, h, y, error)  if (error < emin)    emin = error    imin = i    endif endfor printf("imin = %d, emin = %f\n", imin, emin)
