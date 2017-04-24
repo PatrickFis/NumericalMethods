@@ -1,0 +1,1 @@
+function x=IntRand(n, upperLimit)  # Produces an array of size n of random integers [0, upperLimit].  seed = 0;  i = 0;  x = zeros(1, n);    k = 16807;  j = 2147483647;  seed = 2;  for i=1:n    seed = mod(k*seed, j);    x(i) = double(seed)/double(j);    endfor;  x = floor((upperLimit + 1)*x);  endfunction;  

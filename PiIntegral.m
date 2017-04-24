@@ -1,0 +1,1 @@
+function PiIntegral()  # Approximating sum should be 2/n * sum(f(x_i)) where x_i is in the interval [0, 2].    # Generate random numbers in the interval [0, 2].  x = (2 - 0) * (rand(1,2500));  f = @(x) (4 - x.^2).^0.5;    sum = 0.0;    for i=1:2500    sum = sum + f(x(i));    endfor;  sum = 2/2500 * sum;  printf("Sum = %f\n", sum);  endfunction

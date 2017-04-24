@@ -1,0 +1,1 @@
+function x=rand_from_book(n)  seed = 0;  i = 0;  x = zeros(1, n);    k = 16807;  j = 2147483647;  seed = 2;  for i=1:n    seed = mod(k*seed, j);    x(i) = double(seed)/double(j);    endfor;  endfunction;  

@@ -1,0 +1,1 @@
+function randTest()  # Toss a coin 10000 times  r = rand(10000);  m = 0;  for i=1:10000    if(r(i) <= 0.5)      m = m + 1;      endif    if(mod(i, 1000) == 0)      per = 100 * double(m)/double(i);      printf("i = %d, per = %f\n", i, per)      endif    endfor  endfunction    
